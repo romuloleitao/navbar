@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background: #E1E7E4;
+    color: rgb(0, 119, 255);
+    overflow: hidden;
+}
+
+i {
+    padding-right: 15px;
+}
+
+li {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 16px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.home {
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    padding-right: 55%;
+}
+
+.icon-bars {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .menu li:not(:first-child) {
+        display: none;
+    }
+
+    .menu .icon-bars {
+        float: right;
+        display: block;
+        padding: 14px 16px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .menu.responsive {
+        position: relative;
+    }
+
+    .menu.responsive .icon-bars {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .menu.responsive .icon-bars {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header ul i:first-child {
+        margin-left: 40px;
+    }
+}
