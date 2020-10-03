@@ -9,7 +9,7 @@
 
 header {
     width: 100%;
-    background: #E1E7E4;
+    background: white;
     color: rgb(0, 119, 255);
     overflow: hidden;
 }
@@ -87,4 +87,8 @@ li:hover {
     header ul i:first-child {
         margin-left: 40px;
     }
+}
+
+.content {
+    text-align: center;
 }
